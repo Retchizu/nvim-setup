@@ -12,3 +12,4 @@ vim.keymap.set("t", "<C-q>", "<C-\\><C-N>:q!<CR>", { noremap = true, silent = tr
 vim.keymap.set("n", "<C-q>", ":bd!<CR>", { noremap = true, silent = true, desc = "Close terminal in normal mode" })
 vim.keymap.set("n", "<Tab>", ":bnext<CR>")
 vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>")
+vim.keymap.set("n", "<leader>`", ":bd!<cr>", { desc = "Close current buffer (tab)" })
