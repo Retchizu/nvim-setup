@@ -9,3 +9,11 @@ vim.diagnostic.config({
   update_in_insert = false,
   severity_sort = true,
 })
+vim.api.nvim_create_autocmd("BufReadPost", {
+  pattern = "*",
+  callback = function()
+    if vim.bo.fileformat == "dos" then
+      vim.bo.fileformat = "unix"
+    end
+  end,
+})

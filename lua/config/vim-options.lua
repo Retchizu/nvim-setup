@@ -13,3 +13,5 @@ vim.keymap.set("n", "<C-q>", ":bd!<CR>", { noremap = true, silent = true, desc =
 vim.keymap.set("n", "<Tab>", ":bnext<CR>")
 vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>")
 vim.keymap.set("n", "<leader>`", ":bd!<cr>", { desc = "Close current buffer (tab)" })
+vim.opt.fileformat = "unix"
+vim.o.number = true
